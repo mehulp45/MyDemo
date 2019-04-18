@@ -1,0 +1,4 @@
+com\banking\pageObjects\LoginPageObjects.class
+com\banking\testCases\TC_LoginTest_001.class
+com\banking\pageObjects\HomePageObjects.class
+com\banking\testCases\TC_LoginDDT_002.class

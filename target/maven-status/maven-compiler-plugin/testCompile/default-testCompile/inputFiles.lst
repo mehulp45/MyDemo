@@ -1,4 +1,7 @@
 G:\QA-2018\Workspace\myDemo\src\test\java\com\banking\pageObjects\HomePageObjects.java
 G:\QA-2018\Workspace\myDemo\src\test\java\com\banking\testCases\TC_LoginTest_001.java
+G:\QA-2018\Workspace\myDemo\src\test\java\com\banking\testCases\TC_HomePageLinks_001.java
+G:\QA-2018\Workspace\myDemo\src\test\java\com\banking\testCases\TC_NewCustomer_DDT_001.java
+G:\QA-2018\Workspace\myDemo\src\test\java\com\banking\pageObjects\NewCustomerPage.java
 G:\QA-2018\Workspace\myDemo\src\test\java\com\banking\testCases\TC_LoginDDT_002.java
 G:\QA-2018\Workspace\myDemo\src\test\java\com\banking\pageObjects\LoginPageObjects.java

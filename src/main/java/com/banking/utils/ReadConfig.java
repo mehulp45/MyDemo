@@ -40,5 +40,12 @@ public class ReadConfig {
 		return p.getProperty("ffPath");
 	}
 	
+	public String getNewCustomerExcelFile() {
+		return p.getProperty("newCustomerExcelFile");
+	}
+	
+	public String getExcelSheetName() {
+		return p.getProperty("excelSheetName");
+	}
 
 }

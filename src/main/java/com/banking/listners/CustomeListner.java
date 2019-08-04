@@ -21,18 +21,18 @@ public class CustomeListner implements ITestListener{
 
 	public void onTestFailure(ITestResult result) {
 		
-		System.out.println(result.getName() +" Taken Failed ScreenShot TestCase");
+		//System.out.println(result.getName() +"Failed ScreenShot ");
 		try {
 			Base.captureScreen(result.getName());
+			System.out.println("ScreenShot Taken");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("ScreenShot Not Taken"+e.getMessage());
 		}
 		
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println(result.getName() +"Test skiped");
 		
 	}
 

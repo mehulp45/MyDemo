@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.banking.testCases.TC_LoginTest_001">
+      <class name="com.banking.testCases.TC_NewCustomer_DDT_001">
         <methods>
           <include name="tearDown"/>
+          <include name="addNewCustomer2"/>
+          <include name="setLogin"/>
           <include name="setUp"/>
-          <include name="getfbTitle"/>
-          <include name="getGoogleTitle"/>
         </methods>
-      </class> <!-- com.banking.testCases.TC_LoginTest_001 -->
+      </class> <!-- com.banking.testCases.TC_NewCustomer_DDT_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

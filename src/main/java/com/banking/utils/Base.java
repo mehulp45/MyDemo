@@ -21,7 +21,11 @@ public class Base {
 	public String base_URL = rc.getURL();
 	public String username = rc.getUsername();
 	public String password = rc.getPassword();
-
+	
+	public String newCustomerDataFile = rc.getNewCustomerExcelFile();
+	public String excelSheetName = rc.getExcelSheetName();
+	
+	
 	public static WebDriver driver;
 	public static Logger logger;
 
@@ -30,7 +34,7 @@ public class Base {
 	public void setUp() {
 
 		logger = Logger.getLogger("Banking");
-		PropertyConfigurator.configure("Log4j.properties");
+		PropertyConfigurator.configure("G:\\QA-2018\\Workspace\\myDemo\\Log4j.properties");
 
 		if (br.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + rc.getChromePath());
@@ -41,12 +45,10 @@ public class Base {
 		}
 
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		//driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
-	
-
 	@AfterClass
 	public void tearDown() {
 		driver.quit();

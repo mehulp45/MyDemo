@@ -10,12 +10,12 @@ import com.banking.utils.Base;
 @Listeners({ com.banking.listners.CustomeListner.class, com.banking.utils.Reporting.class })
 public class TC_LoginTest_001 extends Base {
 
-	// @Test(retryAnalyzer=com.banking.Analyzer.RetryAnalyzer.class)
-	// @Test
+	@Test(retryAnalyzer=com.banking.Analyzer.RetryAnalyzer.class)
+	//@Test
 	public void loginTest() throws Exception {
 		driver.get(base_URL);
 		logger.info("Open Url");
-		LoginPageObjects lp = new LoginPageObjects(driver);
+		LoginPageObjects lp = new LoginPageObjects();
 		lp.setUsername(username);
 		logger.info("enetering username");
 		lp.setPassword(password);
@@ -59,7 +59,7 @@ public class TC_LoginTest_001 extends Base {
 	public void getyahooTitle() throws Exception {
 		driver.get("https://www.yahoo.com");
 		// captureScreen("googleTitle");
-		Assert.assertEquals(true, true);
+		Assert.assertEquals(true, false);
 
 	}
 

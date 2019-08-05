@@ -97,6 +97,8 @@ public class NewCustomerPage extends Base {
 	@CacheLookup
 	WebElement emailErrMsg;
 
+	
+	// Actions
 	public void setName(String customerName) {
 		txtname.sendKeys(customerName);
 	}
